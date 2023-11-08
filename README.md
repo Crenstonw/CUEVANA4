@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## About the project
+
+This project was worked on The movie Data Base and made by Alejandro Rubens and Roberto Rebolledo.
+It is a web page where you can see all the new and old films ever existed, and updated many times a day
