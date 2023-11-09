@@ -1,24 +1,4 @@
-.principal {
-    color: white;
-    background-color: #303030;
-}
-
-.icono {
-    text-align: center;
-}
-
-img {
-    width: 80px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    height: 100%;
-}
-
 ul li {
-    display: inline;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
