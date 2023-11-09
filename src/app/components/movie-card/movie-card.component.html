@@ -1,0 +1,7 @@
+<mat-card class="movieItem" [style.backgroundImage]="'url(' + getPosterImg() + ')'">
+    <circle-progress [percent]="getVoteAverageFormatedPercent()" [title]="getVoteAverageFormated().toString()"
+        [radius]="15" [outerStrokeWidth]="3" [innerStrokeWidth]="15" [outerStrokeColor]="'#009946'"
+        [innerStrokeColor]="'#001F0E'" [animation]="true" [animationDuration]="300" [titleFontSize]="'10'"
+        [showUnits]=false [showSubtitle]=false [toFixed]="2" [backgroundColor]="'#001F0E'" [titleColor]="'#FFFFFF'"
+        [backgroundPadding]="2"></circle-progress>
+</mat-card>
