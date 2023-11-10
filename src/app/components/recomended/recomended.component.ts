@@ -52,7 +52,6 @@ export class RecomendedComponent implements OnInit {
           )
         }
       );
-
     }
   }
   getBackgroundImg() {

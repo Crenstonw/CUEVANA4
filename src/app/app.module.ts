@@ -13,6 +13,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { RecomendedComponent } from './components/recomended/recomended.component';
 import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TrailersComponent } from './components/trailers/trailers.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BarraTareasComponent,
     TopRatedMoviesComponent,
     MovieCardComponent,
-    RecomendedComponent
-    CarteleraNavBarComponent
+    RecomendedComponent,
+    CarteleraNavBarComponent,
+    TrailersComponent,
   ],
   imports: [
     BrowserModule,
