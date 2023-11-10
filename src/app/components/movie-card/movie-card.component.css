@@ -3,6 +3,7 @@ mat-card {
     height: 300px;
     width: 200px;
     position: relative;
+    background-color: #454545;
 }
 
 circle-progress {
