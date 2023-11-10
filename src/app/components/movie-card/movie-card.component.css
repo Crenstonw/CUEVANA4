@@ -1,0 +1,12 @@
+mat-card {
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    position: relative;
+}
+
+circle-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

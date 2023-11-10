@@ -6,17 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { BarraTareasComponent } from './components/ruc/barra-tareas/barra-tareas.component';
+import { ImportModule } from './import-module/import/import.module';
+import { TopRatedMoviesComponent } from './components/top-rated-movies/top-rated-movies.component';
+import { MovieCardComponent } from './components/movie-card/movie-card.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarraTareasComponent
+    BarraTareasComponent,
+    TopRatedMoviesComponent,
+    MovieCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    ImportModule,
+    HttpClientModule,
+    NgCircleProgressModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
