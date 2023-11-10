@@ -10,13 +10,16 @@ import { ImportModule } from './import-module/import/import.module';
 import { TopRatedMoviesComponent } from './components/top-rated-movies/top-rated-movies.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarraTareasComponent,
     TopRatedMoviesComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    CarteleraNavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     NgbModule,
     ImportModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot()
+    NgCircleProgressModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
