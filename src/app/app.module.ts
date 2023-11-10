@@ -10,13 +10,15 @@ import { ImportModule } from './import-module/import/import.module';
 import { TopRatedMoviesComponent } from './components/top-rated-movies/top-rated-movies.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { RecomendedComponent } from './components/recomended/recomended.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarraTareasComponent,
     TopRatedMoviesComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    RecomendedComponent
   ],
   imports: [
     BrowserModule,
