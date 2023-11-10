@@ -1,0 +1,27 @@
+.recomended {
+    backdrop-filter: blur(20px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 600px;
+    width: 1080px;
+    font-size: 20px;
+    border-radius: 30pt;
+}
+.recomended>div{
+    height: 100%;
+    width: 100%;
+    background-color: #00000065; 
+    backdrop-filter: blur(10px);
+    border-radius: 30pt;
+
+}
+.simpleinfo{
+    text-shadow: 2px 2px 2px black;
+}
+.simpleinfo>h1{
+    font-size: xx-large;
+}
+iframe{
+    border-radius: 10pt;
+}

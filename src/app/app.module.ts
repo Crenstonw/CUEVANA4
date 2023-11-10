@@ -10,6 +10,7 @@ import { ImportModule } from './import-module/import/import.module';
 import { TopRatedMoviesComponent } from './components/top-rated-movies/top-rated-movies.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { RecomendedComponent } from './components/recomended/recomended.component';
 import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -19,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BarraTareasComponent,
     TopRatedMoviesComponent,
     MovieCardComponent,
+    RecomendedComponent
     CarteleraNavBarComponent
   ],
   imports: [
