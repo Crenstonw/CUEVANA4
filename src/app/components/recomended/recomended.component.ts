@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Movie } from 'src/app/modals/movie-list/movie-list.module';
 import { Video } from 'src/app/modals/videos-response/videos-response.module';
 import { MovieListService } from 'src/app/service/movie-list.service';
@@ -19,7 +20,7 @@ export class RecomendedComponent implements OnInit {
   backdrop!: string;
   description!: string;
 
-  constructor(private movieService: MovieListService, private serieService: SerieListService) { }
+  constructor(private movieService: MovieListService, private serieService: SerieListService, private sanitizer:DomSanitizer) { }
 
   ngOnInit(): void {
     this.serieOrMovie = Math.floor(Math.random() * 2);
@@ -38,7 +39,7 @@ export class RecomendedComponent implements OnInit {
         }
       );
     } else {
-      this.serieService.getPopular().subscribe(
+      this.serieService.getTopRated().subscribe(
         resp => {
           var serie = resp.results[Math.floor(Math.random() * this.maxRandomNumber)];
           this.title = serie.name;
@@ -57,7 +58,9 @@ export class RecomendedComponent implements OnInit {
   getBackgroundImg() {
     return (`https://www.themoviedb.org/t/p/original/${this.backdrop}`)
   }
-
+  getMovieTrailer(key: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`//www.youtube.com/embed/${key}?autoplay=0&amp;origin=https%3A%2F%2Fwww.themoviedb.org&amp;hl=es&amp;modestbranding=1&amp;fs=1&amp;autohide=1`);
+  }
 
 
 }
