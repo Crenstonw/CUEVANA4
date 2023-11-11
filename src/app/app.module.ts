@@ -14,6 +14,7 @@ import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartele
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarteleraListaListComponent } from './components/lists/cartelera-lista-list/cartelera-lista-list.component';
 import { CarteleraListaItemComponent } from './components/items/cartelera-lista-item/cartelera-lista-item.component';
+import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CarteleraListaItemComponent } from './components/items/cartelera-lista-
     MovieCardComponent,
     CarteleraNavBarComponent,
     CarteleraListaListComponent,
-    CarteleraListaItemComponent
+    CarteleraListaItemComponent,
+    CarteleraUiComponent
   ],
   imports: [
     BrowserModule,

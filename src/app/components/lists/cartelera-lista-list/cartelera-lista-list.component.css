@@ -1,0 +1,11 @@
+.row {
+    width: 90%;
+    padding: 20px;
+    overflow:auto;
+    height:80%;
+}
+
+mat-paginator {
+    background-color: #303030;
+    color: white !important;
+}

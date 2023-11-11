@@ -1,0 +1,10 @@
+<div class="row">
+    <ng-container *ngFor="let s of seriesList">
+        <app-cartelera-lista-item class="my-2 col-2" [series]="s"></app-cartelera-lista-item>
+    </ng-container>
+</div>
+<mat-paginator [length]="100"
+              [pageSize]="20"
+              [pageSizeOptions]="[6, 12, 24, 60]"
+              aria-label="Select page">
+</mat-paginator>
