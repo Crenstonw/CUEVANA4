@@ -12,6 +12,8 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarteleraListaListComponent } from './components/lists/cartelera-lista-list/cartelera-lista-list.component';
+import { CarteleraListaItemComponent } from './components/items/cartelera-lista-item/cartelera-lista-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BarraTareasComponent,
     TopRatedMoviesComponent,
     MovieCardComponent,
-    CarteleraNavBarComponent
+    CarteleraNavBarComponent,
+    CarteleraListaListComponent,
+    CarteleraListaItemComponent
   ],
   imports: [
     BrowserModule,
