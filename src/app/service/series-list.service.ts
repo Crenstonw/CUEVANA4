@@ -11,7 +11,7 @@ import { environment } from "src/environments/environment.development";
   
     constructor(private http: HttpClient) { }
 
-    getOnAir(): Observable<OnAir> {
-        return this.http.get<OnAir>(`${environment.HeadUrl}/tv/on_the_air?${environment.apiKey}`)
+    getOnAir(page:number): Observable<OnAir> {
+        return this.http.get<OnAir>(`${environment.HeadUrl}/tv/on_the_air?${environment.apiKey}&page=${page}`)
     }
 }

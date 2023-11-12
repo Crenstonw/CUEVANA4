@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-lg">
     <ul class="navbar-nav">
-        <li class="nav-link active-link" [ngClass]="">ALL</li>
-        <li class="nav-link" [ngClass]="">MOVIES</li>
-        <li class="nav-link" [ngClass]="">SERIES</li>
+        <li #all class="nav-link active-link" (click)="click(1)">ALL</li>
+        <li #movies class="nav-link" (click)="click(2)">MOVIES</li>
+        <li #series class="nav-link" (click)="click(3)">SERIES</li>
     </ul>
 </div>

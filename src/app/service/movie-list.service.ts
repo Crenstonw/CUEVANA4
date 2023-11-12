@@ -16,7 +16,7 @@ export class MovieListService {
     return this.http.get<MovieListResponse>(`${environment.HeadUrl}/movie/top_rated?${environment.apiKey}`);
   }
 
-  getNowPlaying(): Observable<NowPlaying> {
-    return this.http.get<NowPlaying>(`${environment.HeadUrl}/movie/now_playing?${environment.apiKey}`)
+  getNowPlaying(page: number): Observable<NowPlaying> {
+    return this.http.get<NowPlaying>(`${environment.HeadUrl}/movie/now_playing?${environment.apiKey}&page=${page}`)
   }
 }
