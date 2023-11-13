@@ -1,0 +1,21 @@
+.active-link {
+    background-color: #303030;
+    color: #30D1F4;
+    border-radius: 20px;
+}
+
+li {
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.navbar-nav {
+    background-color: #757575;
+    border-radius: 20px;
+    border: 1px white solid;
+}
+
+.navbar {
+    margin-left: 20px;
+}

@@ -13,6 +13,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { RecomendedComponent } from './components/recomended/recomended.component';
 import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarteleraListaListComponent } from './components/lists/cartelera-lista-list/cartelera-lista-list.component';
+import { CarteleraListaItemComponent } from './components/items/cartelera-lista-item/cartelera-lista-item.component';
+import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BarraTareasComponent,
     TopRatedMoviesComponent,
     MovieCardComponent,
+    CarteleraNavBarComponent,
+    CarteleraListaListComponent,
+    CarteleraListaItemComponent,
+    CarteleraUiComponent
     RecomendedComponent
     CarteleraNavBarComponent
   ],
