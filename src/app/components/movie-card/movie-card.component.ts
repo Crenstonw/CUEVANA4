@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Movie } from 'src/app/modals/movie-list/movie-list.module';
+import { Movie } from 'src/app/modules/movie-list.module';
 import { environment } from 'src/environments/environment.development';
 
 @Component({

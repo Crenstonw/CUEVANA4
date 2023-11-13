@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Movie } from 'src/app/modals/movie-list/movie-list.module';
-import { Video } from 'src/app/modals/videos-response/videos-response.module';
+import { Movie } from 'src/app/modules/movie-list.module';
+import { Video } from 'src/app/modules/videos-response.module';
 import { MovieListService } from 'src/app/service/movie-list.service';
 import { SerieListService } from 'src/app/service/serie-list.service';
 

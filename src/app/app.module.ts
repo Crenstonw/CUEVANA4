@@ -11,11 +11,11 @@ import { TopRatedMoviesComponent } from './components/top-rated-movies/top-rated
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { RecomendedComponent } from './components/recomended/recomended.component';
-import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
+import { CarteleraNavBarComponent } from './components/MAIN/cartelera-nav-bar/cartelera-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarteleraListaListComponent } from './components/lists/cartelera-lista-list/cartelera-lista-list.component';
-import { CarteleraListaItemComponent } from './components/items/cartelera-lista-item/cartelera-lista-item.component';
-import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
+import { CarteleraListaListComponent } from './components/CARTELERA/cartelera-lista-list/cartelera-lista-list.component';
+import { CarteleraListaItemComponent } from './components/CARTELERA/cartelera-lista-item/cartelera-lista-item.component';
+import { PageCarteleraComponent } from './ui/page-cartelera/page-cartelera.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +26,9 @@ import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
     CarteleraNavBarComponent,
     CarteleraListaListComponent,
     CarteleraListaItemComponent,
-    CarteleraUiComponent
-    RecomendedComponent
-    CarteleraNavBarComponent
+    RecomendedComponent,
+    CarteleraNavBarComponent,
+    PageCarteleraComponent
   ],
   imports: [
     BrowserModule,
