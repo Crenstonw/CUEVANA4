@@ -1,6 +1,6 @@
 <div class="d-flex align-items-center justify-content-center row p-0 mt-2">
     <ng-container *ngFor="let i of items" >
-        <a [routerLink]="['movie/',i.id]" class="my-2 mx-1 p-0 justify-content-center d-flex col-xxl-2 col-xl-3">
+        <a (click)="redirectToDetails(i)" class="my-2 mx-1 p-0 justify-content-center d-flex col-xxl-2 col-xl-3">
             <app-cartelera-lista-item [moviesorserie]="i"></app-cartelera-lista-item>
         </a>
     </ng-container>
