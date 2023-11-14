@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class CarteleraService {
 
-    private numeroCompartido: number = 1;
+    private numeroCompartido = new Subject<number>();
 
-    setNumber(number: number) {
-        this.numeroCompartido = number
+    emitNumber(number: number) {
+        this.numeroCompartido.next(number);
     }
 
-    getNumber(): number {
-        return this.numeroCompartido;
+    onNumberChange(): Observable<number> {
+        return this.numeroCompartido.asObservable();
     }
 
 }

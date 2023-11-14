@@ -41,7 +41,6 @@ import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-re
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgbModule,
     ImportModule,
     HttpClientModule,

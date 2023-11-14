@@ -7,6 +7,16 @@
     text-align: center;
 }
 
+mat-icon {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: -2px;
+    padding-inline: 4px;
+    border-top-left-radius: 10px;
+    background-color: #303030;
+}
+
 mat-card {
     border-radius: 10px;
     width: 100%;

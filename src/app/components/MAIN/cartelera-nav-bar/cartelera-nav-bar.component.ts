@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
+import { CarteleraService } from 'src/app/service/cartelera.interface';
 
 @Component({
   selector: 'app-cartelera-nav-bar',
@@ -6,11 +7,10 @@ import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular
   styleUrls: ['./cartelera-nav-bar.component.css']
 })
 export class CarteleraNavBarComponent {
-  @ViewChild('all') all: ElementRef | undefined;
   
-  @Output() numero = new EventEmitter<number>()
+  constructor(private carteleraService: CarteleraService) {};
 
-   click(numero: number) {
-    this.numero.emit(numero);
+  click(numero: number) {
+    this.carteleraService.emitNumber(numero);
   }
 }
