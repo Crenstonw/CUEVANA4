@@ -20,6 +20,8 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
 import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
 import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-trailer/movie-item-trailer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/movie-item-info.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-tr
     PageMovieItemComponent,
     MovvieListRespartoComponent,
     MovieItemRepartoComponent,
-    MovieItemTrailerComponent
+    MovieItemTrailerComponent,
+    MovieItemInfoComponent
 
   ],
   imports: [

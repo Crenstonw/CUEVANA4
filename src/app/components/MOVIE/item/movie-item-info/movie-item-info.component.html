@@ -1,0 +1,20 @@
+<div class="row p-5">
+    <div *ngIf="movie.status!=null">
+        <h2>Status</h2>
+        <p>{{movie.status}}</p>
+    </div>
+    <div *ngIf="movie.original_language!=null">
+        <h2>Original Language</h2>
+        <p>{{movie.original_language}}</p>
+    </div>
+    <div *ngIf="movie.budget!=null">
+        <h2>Budget</h2>
+        <p>{{movie.budget}}</p>
+    </div>
+    <div *ngIf="movie.revenue!=null">
+        <h2>Revenue</h2>
+        <p>{{movie.revenue}}</p>
+    </div>
+</div>
+    
+    
