@@ -1,7 +1,17 @@
-.row {
-    padding: 20px;
+.cositas {
     overflow: auto;
-    height: 80%;
+    box-sizing: border-box;
+    height: 750px !important;
+}
+
+mat-paginator {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+div.row {
+    overflow: auto;
 }
 
 div.row::-webkit-scrollbar {
@@ -13,9 +23,11 @@ div.row::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #757575;
 }
-app-cartelera-lista-item{
+
+app-cartelera-lista-item {
     width: 100%;
 }
+
 mat-paginator {
     background-color: #303030;
     color: white !important;
