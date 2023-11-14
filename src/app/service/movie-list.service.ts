@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment.development';
 import { NowPlaying } from '../modules/movies-NowPlaying.interface';
 import { VideosResponse } from '../modules/videos-response.module';
 import { MovieDetailsResponse } from '../modules/movie-detatils.module';
+import { RepartoResponse } from '../modules/reparto-response.module';
 
 
 @Injectable({
@@ -33,5 +34,9 @@ export class MovieListService {
 
   findMovieById(id: string): Observable<MovieDetailsResponse> {
     return this.http.get<MovieDetailsResponse>(`${environment.HeadUrl}/movie/${id}?${environment.apiKey}`);
+  }
+
+  getCarteleraOfMovie(id: string): Observable<RepartoResponse> {
+    return this.http.get<RepartoResponse>(`${environment.HeadUrl}/movie/${id}/credits?${environment.apiKey}`);
   }
 }

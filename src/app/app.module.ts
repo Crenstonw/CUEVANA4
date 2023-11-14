@@ -19,7 +19,8 @@ import { PageCarteleraComponent } from './ui/page-cartelera/page-cartelera.compo
 import { PageHomeComponent } from './ui/page-home/page-home.component';
 import { PageMovieItemComponent } from './ui/page-movie-item/page-movie-item.component';
 import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-header/movie-item-header.component';
-
+import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
+import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,9 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
     MovieItemHeaderComponent,
     PageCarteleraComponent,
     PageHomeComponent,
-    PageMovieItemComponent
+    PageMovieItemComponent,
+    MovvieListRespartoComponent,
+    MovieItemRepartoComponent
   ],
   imports: [
     BrowserModule,
