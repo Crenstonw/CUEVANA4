@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    font-weight: bolder;
+
 }
 
 body {
@@ -8,14 +10,4 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: #454545;
     color: white;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
