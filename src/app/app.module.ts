@@ -5,18 +5,22 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
-import { BarraTareasComponent } from './components/ruc/barra-tareas/barra-tareas.component';
+import { BarraTareasComponent } from './components/COMMON/barra-tareas/barra-tareas.component';
 import { ImportModule } from './import-module/import/import.module';
-import { TopRatedMoviesComponent } from './components/top-rated-movies/top-rated-movies.component';
-import { MovieCardComponent } from './components/movie-card/movie-card.component';
+import { TopRatedMoviesComponent } from './components/MAIN/top-rated-movies/top-rated-movies.component';
+import { MovieCardComponent } from './components/MAIN/movie-card/movie-card.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { RecomendedComponent } from './components/recomended/recomended.component';
-import { CarteleraNavBarComponent } from './components/cartelera-nav-bar/cartelera-nav-bar.component';
+import { RecomendedComponent } from './components/MAIN/recomended/recomended.component';
+import { CarteleraNavBarComponent } from './components/MAIN/cartelera-nav-bar/cartelera-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarteleraListaListComponent } from './components/lists/cartelera-lista-list/cartelera-lista-list.component';
-import { CarteleraListaItemComponent } from './components/items/cartelera-lista-item/cartelera-lista-item.component';
-import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
-
+import { CarteleraListaListComponent } from './components/CARTELERA/cartelera-lista-list/cartelera-lista-list.component';
+import { CarteleraListaItemComponent } from './components/CARTELERA/cartelera-lista-item/cartelera-lista-item.component';
+import { PageCarteleraComponent } from './ui/page-cartelera/page-cartelera.component';
+import { PageHomeComponent } from './ui/page-home/page-home.component';
+import { PageMovieItemComponent } from './ui/page-movie-item/page-movie-item.component';
+import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-header/movie-item-header.component';
+import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
+import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,18 +30,24 @@ import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
     CarteleraNavBarComponent,
     CarteleraListaListComponent,
     CarteleraListaItemComponent,
-    CarteleraUiComponent
-    RecomendedComponent
-    CarteleraNavBarComponent
+    RecomendedComponent,
+    CarteleraNavBarComponent,
+    MovieItemHeaderComponent,
+    PageCarteleraComponent,
+    PageHomeComponent,
+    PageMovieItemComponent,
+    MovvieListRespartoComponent,
+    MovieItemRepartoComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgbModule,
     ImportModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

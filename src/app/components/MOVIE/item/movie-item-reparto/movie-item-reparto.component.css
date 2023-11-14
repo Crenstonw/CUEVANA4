@@ -1,0 +1,16 @@
+mat-card {
+    height: 95%;
+    width: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.card {
+    height: 350px;
+    width: 180px;
+    border-top-right-radius: 5pt;
+    border-top-left-radius: 5pt;
+    background-color: #cccccc;
+    border-color: rgba(0, 0, 0, 0);
+    border: none;
+}

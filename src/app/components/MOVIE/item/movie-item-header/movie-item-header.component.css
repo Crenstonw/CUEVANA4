@@ -1,0 +1,49 @@
+.headerbg {
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.headerbg>div {
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    background: rgb(69, 69, 69);
+    background: linear-gradient(90deg, rgba(69, 69, 69, 1) 0%, rgba(69, 69, 69, 0.17970938375350143) 65%);
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+mat-card {
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #454545;
+    background-size: cover;
+}
+
+circle-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.gender {
+    width: 150px;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: 20pt;
+
+}
