@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Part } from 'src/app/modules/collecion-response.module';
 import { environment } from 'src/environments/environment.development';
 
@@ -9,6 +10,9 @@ import { environment } from 'src/environments/environment.development';
 })
 export class MovieItemSagaComponent {
   @Input() part!: Part
+
+  constructor(private router: Router){}
+
   getImg() {
     return `${environment.Photoheader}/${this.part.poster_path}`
   }
