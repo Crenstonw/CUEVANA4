@@ -1,13 +1,11 @@
-<div class="d-flex align-items-center justify-content-center row p-0 mt-2">
-    <ng-container *ngFor="let i of items" >
-        <a (click)="redirectToDetails(i)" class="my-2 mx-1 p-0 justify-content-center d-flex col-xxl-2 col-xl-3">
+<div class="cositas d-flex align-items-center justify-content-center row p-0 mt-2" style="width: 100%;">
+    <ng-container *ngFor="let i of items">
+        <div class="row my-2 mx-1 p-0 d-flex col-sm-3 col-md-2">
             <app-cartelera-lista-item [moviesorserie]="i"></app-cartelera-lista-item>
-        </a>
+        </div>
     </ng-container>
 </div>
-<mat-paginator  [length]="pageLength"
-                [pageSize]="20"
-                showFirstLastButtons="true"
-                (page)="changePage($event)"
-                aria-label="Select page">
+
+<mat-paginator [length]="pageLength" [pageSize]="20" showFirstLastButtons="true" (page)="changePage($event)"
+    aria-label="Select page">
 </mat-paginator>

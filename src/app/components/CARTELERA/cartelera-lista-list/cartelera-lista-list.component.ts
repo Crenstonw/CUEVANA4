@@ -15,30 +15,21 @@ import { SerieListService } from 'src/app/service/serie-list.service';
 })
 export class CarteleraListaListComponent implements OnInit {
   @Input() numero: number | undefined;
-  
-  items: (Serie|Movie)[] = [];
+
+  items: (Serie | Movie)[] = [];
   pageLength: number | undefined;
   page: number = 1;
 
-  constructor( private seriesService: SerieListService, private moviesService: MovieListService, private carteleraService: CarteleraService, private router: Router) { };
-  
-  selectedSeries: Serie |Movie | undefined;
-  
-  redirectToDetails(item: Serie|Movie) {
-    if (this.isMovie(item)){
-      console.log("manolo")
-      this.router.navigate(['movie/', item.id]);
-    }else{
-      this.router.navigate(['serie/', item.id]);
-    }
-  }
-    
+  constructor(private seriesService: SerieListService, private moviesService: MovieListService, private carteleraService: CarteleraService) { };
+
+  selectedSeries: Serie | Movie | undefined;
+
   isMovie(obj: Serie | Movie): obj is Movie {
     return (obj as Movie).title !== undefined;
   }
   changePage($event: PageEvent): void {
     console.log($event)
-    this.page = $event.pageIndex+1;
+    this.page = $event.pageIndex + 1;
     this.loadData()
   }
   ngOnInit(): void {
@@ -47,7 +38,7 @@ export class CarteleraListaListComponent implements OnInit {
 
   loadData() {
     this.getSeries();
-    this.getMovies(); 
+    this.getMovies();
   }
 
   getMovies() {
@@ -63,5 +54,5 @@ export class CarteleraListaListComponent implements OnInit {
       this.pageLength = s.total_results;
     });
   }
-  
+
 }
