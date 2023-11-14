@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,7 +17,9 @@ import { PageCarteleraComponent } from './ui/page-cartelera/page-cartelera.compo
 import { PageHomeComponent } from './ui/page-home/page-home.component';
 import { PageMovieItemComponent } from './ui/page-movie-item/page-movie-item.component';
 import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-header/movie-item-header.component';
-import { AppRoutingModule } from './app-routing.module';
+import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
+import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
+import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-trailer/movie-item-trailer.component';
 
 @NgModule({
   declarations: [
@@ -31,19 +32,23 @@ import { AppRoutingModule } from './app-routing.module';
     CarteleraListaItemComponent,
     RecomendedComponent,
     CarteleraNavBarComponent,
+    MovieItemHeaderComponent,
     PageCarteleraComponent,
     PageHomeComponent,
     PageMovieItemComponent,
-    MovieItemHeaderComponent
+    MovvieListRespartoComponent,
+    MovieItemRepartoComponent,
+    MovieItemTrailerComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgbModule,
     ImportModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
