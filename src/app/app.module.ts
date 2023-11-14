@@ -29,6 +29,7 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
     CarteleraNavBarComponent,
     CarteleraListaListComponent,
     CarteleraListaItemComponent,
+    CarteleraUiComponent,
     RecomendedComponent,
     CarteleraNavBarComponent,
     PageCarteleraComponent,
