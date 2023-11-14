@@ -1,0 +1,7 @@
+<div class="row py-5 text-center">
+    <h2>{{collection.name}}</h2>
+    <div class="row d-flex justify-content-center">
+        <app-movie-item-saga class="col-xl-7 col-xxl-4 m-3" *ngFor="let parts of collection.parts"
+            [part]="parts"></app-movie-item-saga>
+    </div>
+</div>
