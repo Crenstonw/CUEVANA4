@@ -38,6 +38,7 @@ import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-re
     PageMovieItemComponent,
     MovvieListRespartoComponent,
     MovieItemRepartoComponent
+
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,8 @@ import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-re
     ImportModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

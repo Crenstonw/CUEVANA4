@@ -1,5 +1,5 @@
 .headerbg {
-    height: 600px;
+    height: 400px;
     width: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -9,7 +9,7 @@
 .headerbg>div {
     height: 100%;
     width: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     background: rgb(69, 69, 69);
     background: linear-gradient(90deg, rgba(69, 69, 69, 1) 0%, rgba(69, 69, 69, 0.17970938375350143) 65%);
 }

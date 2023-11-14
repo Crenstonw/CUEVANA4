@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Cast } from 'src/app/modules/reparto-response.module';
+import { environment } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-movie-item-reparto',
@@ -8,4 +9,7 @@ import { Cast } from 'src/app/modules/reparto-response.module';
 })
 export class MovieItemRepartoComponent {
   @Input() cast!: Cast
+  getImg() {
+    return `${environment.Photoheader}/${this.cast.profile_path}`
+  }
 }

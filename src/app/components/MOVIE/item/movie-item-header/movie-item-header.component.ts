@@ -13,6 +13,10 @@ export class MovieItemHeaderComponent {
   getImg() {
     return `${environment.Photoheader}/${this.movie.poster_path}`
   }
+
+  getImgBackground() {
+    return `${environment.Photoheader}/${this.movie.backdrop_path}`
+  }
   getVoteAverageFormated() {
     return this.movie.vote_average.toFixed(1);
   }
