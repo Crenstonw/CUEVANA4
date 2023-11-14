@@ -28,6 +28,10 @@ export class MovieListService {
     return this.http.get<MovieListResponse>(`${environment.HeadUrl}/movie/popular?${environment.apiKey}`);
   }
 
+  getPopularPageable(page: number): Observable<MovieListResponse> {
+    return this.http.get<MovieListResponse>(`${environment.HeadUrl}/movie/popular?${environment.apiKey}&page=${page}`);
+  }
+
   getNowPlaying(page: number): Observable<MovieListResponse> {
     return this.http.get<NowPlaying>(`${environment.HeadUrl}/movie/now_playing?${environment.apiKey}&page=${page}`)
   }

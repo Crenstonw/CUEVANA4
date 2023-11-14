@@ -24,6 +24,12 @@ import { ActoresListaItemComponent } from './components/ACTORES/actores-lista-it
 import { ActoresListaListComponent } from './components/ACTORES/actores-lista-list/actores-lista-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageActoresListComponent } from './ui/page-actores-list/page-actores-list.component';
+import { MovieListaListComponent } from './components/MOVIE/movieList/movie-lista-list/movie-lista-list.component';
+import { MovieListaItemComponent } from './components/MOVIE/movieList/movie-lista-item/movie-lista-item.component';
+import { PageMovieListComponent } from './ui/page-movie-list/page-movie-list.component';
+import { SeriesListaListComponent } from './components/SERIES/series-lista-list/series-lista-list.component';
+import { SeriesListaItemComponent } from './components/SERIES/series-lista-item/series-lista-item.component';
+import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +51,13 @@ import { PageActoresListComponent } from './ui/page-actores-list/page-actores-li
     MovieItemTrailerComponent,
     ActoresListaItemComponent,
     ActoresListaListComponent,
-    PageActoresListComponent
+    PageActoresListComponent,
+    MovieListaListComponent,
+    MovieListaItemComponent,
+    PageMovieListComponent,
+    SeriesListaListComponent,
+    SeriesListaItemComponent,
+    PageSeriesListComponent
 
   ],
   imports: [
