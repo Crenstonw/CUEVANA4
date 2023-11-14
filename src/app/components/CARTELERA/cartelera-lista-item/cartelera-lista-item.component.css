@@ -2,19 +2,26 @@
     background-color: #303030;
     color: white;
     padding: 10px;
-    height: 400px;
+    height: 440px;
     width: 100%;
     text-align: center;
 }
 
-mat-icon {
-    position:absolute;
+mat-expansion-panel {
+    position: absolute;
     bottom: 0;
     right: 0;
-    margin: -2px;
-    padding-inline: 4px;
-    border-top-left-radius: 10px;
+    width: 80px;
+    padding: 0;
     background-color: #303030;
+    color: white;
+    box-shadow: none;
+}
+
+mat-icon {
+    color: white;
+    margin: 0px;
+    padding: 0;
 }
 
 mat-card {
