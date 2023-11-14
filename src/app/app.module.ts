@@ -22,6 +22,8 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
 import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
 import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-trailer/movie-item-trailer.component';
+import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
+import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,9 @@ import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-tr
     PageMovieItemComponent,
     MovvieListRespartoComponent,
     MovieItemRepartoComponent,
-    MovieItemTrailerComponent
+    MovieItemTrailerComponent,
+    MovieListSagaComponent,
+    MovieItemSagaComponent
 
   ],
   imports: [
