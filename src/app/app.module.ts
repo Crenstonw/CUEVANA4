@@ -26,8 +26,8 @@ import { CarteleraUiComponent } from './ui/cartelera-ui/cartelera-ui.component';
     CarteleraNavBarComponent,
     CarteleraListaListComponent,
     CarteleraListaItemComponent,
-    CarteleraUiComponent
-    RecomendedComponent
+    CarteleraUiComponent,
+    RecomendedComponent,
     CarteleraNavBarComponent
   ],
   imports: [
