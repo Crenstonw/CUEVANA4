@@ -5,7 +5,7 @@
         <app-movie-item-trailer [id]="id"></app-movie-item-trailer>
     </div>
     <div class="col">
-
-        <app-movie-item-info [movie]="movie"></app-movie-item-info>
+        <app-movie-list-saga *ngIf="collectionId!=null" [collectionId]="collectionId"></app-movie-list-saga>
+        <app-movie-item-info [movie]="movie" [keywords]="keyword"></app-movie-item-info>
     </div>
 </div>

@@ -8,14 +8,10 @@ import { MovieListService } from 'src/app/service/movie-list.service';
   templateUrl: './movie-item-info.component.html',
   styleUrls: ['./movie-item-info.component.css']
 })
-export class MovieItemInfoComponent implements OnInit{
+export class MovieItemInfoComponent {
   @Input() movie!: MovieDetailsResponse;
-  keywords!:KeywordsResponse;
+  @Input() keywords!: KeywordsResponse;
 
-  constructor(private movieListService: MovieListService){}
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
 
 }

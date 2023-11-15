@@ -1,4 +1,5 @@
-<div class="row p-5">
+<div class="row p-5 ms-5">
+    <h1 class="text-center">INFO</h1>
     <div *ngIf="movie.status!=null">
         <h2>Status</h2>
         <p>{{movie.status}}</p>
@@ -15,6 +16,12 @@
         <h2>Revenue</h2>
         <p>{{movie.revenue}}</p>
     </div>
+    <h2>keywords</h2>
+    <div class="row d-flex justify-content-start">
+        <div class="col-4 keyword m-2 text-center p-1 d-flex justify-content-center align-items-center"
+            *ngFor="let key of keywords.keywords">
+            <span>{{key.name.toUpperCase()}} </span>
+        </div>
+
+    </div>
 </div>
-    
-    
