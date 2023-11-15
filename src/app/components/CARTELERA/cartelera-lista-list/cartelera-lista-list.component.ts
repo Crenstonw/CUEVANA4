@@ -42,7 +42,7 @@ export class CarteleraListaListComponent implements OnInit {
   }
 
   getMovies() {
-    this.moviesService.getNowPlaying(this.page.toString()).subscribe(m => {
+    this.moviesService.getNowPlaying(this.page).subscribe(m => {
       this.items = [...this.items, ...m.results];
       this.pageLength = m.total_results;
     });

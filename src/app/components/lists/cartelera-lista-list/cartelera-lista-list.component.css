@@ -1,17 +1,8 @@
-.cositas {
+.row {
+    width: 90%;
+    padding: 20px;
     overflow: auto;
-    box-sizing: border-box;
-    height: 20% !important;
-}
-
-mat-paginator {
-    width: 100%;
-    position:relative;
-    bottom: 0;
-}
-
-div.row {
-    overflow: auto;
+    height: 80%;
 }
 
 div.row::-webkit-scrollbar {
@@ -22,10 +13,6 @@ div.row::-webkit-scrollbar {
 div.row::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #757575;
-}
-
-app-cartelera-lista-item {
-    width: 100%;
 }
 
 mat-paginator {

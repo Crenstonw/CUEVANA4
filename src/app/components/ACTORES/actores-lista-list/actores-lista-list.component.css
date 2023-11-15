@@ -1,7 +1,7 @@
 .cositas {
     overflow: auto;
     box-sizing: border-box;
-    height: 20% !important;
+    height: 84%;
 }
 
 mat-paginator {
