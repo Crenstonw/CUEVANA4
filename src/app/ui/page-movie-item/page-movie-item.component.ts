@@ -12,6 +12,7 @@ import { MovieListService } from 'src/app/service/movie-list.service';
 export class PageMovieItemComponent implements OnInit {
   id!: string | null;
   movie!: MovieDetailsResponse;
+  collectionId!: string | null;
 
   constructor(private route: ActivatedRoute, private movieListService: MovieListService) { }
 
@@ -20,8 +21,9 @@ export class PageMovieItemComponent implements OnInit {
     if (this.id != null)
       this.movieListService.findMovieById(this.id).subscribe(resp => {
         this.movie = resp
+        this.collectionId = resp.belongs_to_collection.id.toString();
       })
-    console.log(this.id);
   }
+
 
 }

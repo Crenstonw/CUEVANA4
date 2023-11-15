@@ -30,6 +30,7 @@ import { PageMovieListComponent } from './ui/page-movie-list/page-movie-list.com
 import { SeriesListaListComponent } from './components/SERIES/series-lista-list/series-lista-list.component';
 import { SeriesListaItemComponent } from './components/SERIES/series-lista-item/series-lista-item.component';
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
+import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,9 @@ import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.
     PageMovieListComponent,
     SeriesListaListComponent,
     SeriesListaItemComponent,
-    PageSeriesListComponent
+    PageSeriesListComponent,
+    MovieListSagaComponent,
+    MovieItemSagaComponent
 
   ],
   imports: [
