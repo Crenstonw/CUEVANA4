@@ -20,6 +20,7 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
 import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
 import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-trailer/movie-item-trailer.component';
+
 import { ActoresListaItemComponent } from './components/ACTORES/actores-lista-item/actores-lista-item.component';
 import { ActoresListaListComponent } from './components/ACTORES/actores-lista-list/actores-lista-list.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +33,6 @@ import { SeriesListaItemComponent } from './components/SERIES/series-lista-item/
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
 import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,8 +63,7 @@ import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/
     SeriesListaListComponent,
     SeriesListaItemComponent,
     PageSeriesListComponent,
-    MovieListSagaComponent,
-    MovieItemSagaComponent
+    MovieListSagaComponent
   ],
   imports: [
     BrowserModule,
