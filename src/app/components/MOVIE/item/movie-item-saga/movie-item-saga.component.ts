@@ -22,4 +22,4 @@ export class MovieItemSagaComponent {
     this.router.navigate(['movie/', item.id]);
   }
 
-}9
+} 
