@@ -1,0 +1,8 @@
+<div class="row p-5">
+    <h2>Images</h2>
+    <div class="list-group list-group-horizontal position-relative overflow-auto w-100">
+        <div class="list-group-item p-0 m-0" *ngFor="let image of imagesList.backdrops">
+            <img [src]="getImg(image.file_path)" height="200px" width="400px" alt="">
+        </div>
+    </div>
+</div>
