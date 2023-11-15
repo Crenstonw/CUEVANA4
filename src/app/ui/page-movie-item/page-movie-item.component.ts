@@ -31,6 +31,7 @@ export class PageMovieItemComponent implements OnInit {
         this.collectionId = resp.belongs_to_collection.id.toString();
       })
     }
+
   }
 
 

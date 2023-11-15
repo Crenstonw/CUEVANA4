@@ -14,10 +14,12 @@ export class MovieItemSagaComponent {
 
   constructor(private router: Router) { }
 
+
   getImg() {
     return `${environment.Photoheader}/${this.part.poster_path}`
   }
   redirectToDetails(item: Part) {
     this.router.navigate(['movie/', item.id]);
   }
-}
+
+}9
