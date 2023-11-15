@@ -1,0 +1,13 @@
+form * {
+    background-color: transparent;
+    width: 220px;
+    color: white;
+}
+
+form input {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid white;
+    width: 200px;
+    color: white;
+}

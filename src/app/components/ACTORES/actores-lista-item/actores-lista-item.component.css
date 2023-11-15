@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.card-title {
+    cursor: pointer;
+}
+
 mat-expansion-panel {
     position: absolute;
     bottom: 0;
