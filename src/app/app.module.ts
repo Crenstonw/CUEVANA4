@@ -24,16 +24,18 @@ import { ActoresListaItemComponent } from './components/ACTORES/actores-lista-it
 import { ActoresListaListComponent } from './components/ACTORES/actores-lista-list/actores-lista-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageActoresListComponent } from './ui/page-actores-list/page-actores-list.component';
-import { MovieListaListComponent } from './components/MOVIE/movieList/movie-lista-list/movie-lista-list.component';
-import { MovieListaItemComponent } from './components/MOVIE/movieList/movie-lista-item/movie-lista-item.component';
+import { MovieListaListComponent } from './components/LISTSMOVIES/movie-lista-list/movie-lista-list.component';
+import { MovieListaItemComponent } from './components/LISTSMOVIES/movie-lista-item/movie-lista-item.component';
 import { PageMovieListComponent } from './ui/page-movie-list/page-movie-list.component';
-import { SeriesListaListComponent } from './components/SERIES/series-lista-list/series-lista-list.component';
-import { SeriesListaItemComponent } from './components/SERIES/series-lista-item/series-lista-item.component';
+import { SeriesListaListComponent } from './components/LISTSERIES/series-lista-list/series-lista-list.component';
+import { SeriesListaItemComponent } from './components/LISTSERIES/series-lista-item/series-lista-item.component';
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
 import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
 import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/movie-item-info.component';
 import { ImageComponent } from './components/MOVIE/item/image/image.component';
+import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-header/serie-item-header.component';
+import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +69,9 @@ import { ImageComponent } from './components/MOVIE/item/image/image.component';
     MovieListSagaComponent,
     MovieItemSagaComponent,
     MovieItemInfoComponent,
-    ImageComponent
+    ImageComponent,
+    SerieItemHeaderComponent,
+    PageSeriesItemComponent
   ],
   imports: [
     BrowserModule,
