@@ -47,3 +47,7 @@ circle-progress {
     border-radius: 20pt;
 
 }
+
+iframe {
+    border-radius: 15pt;
+}

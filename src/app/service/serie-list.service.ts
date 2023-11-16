@@ -14,7 +14,7 @@ export class SerieListService {
   constructor(private http: HttpClient) { }
 
   getSerieVideos(id: string): Observable<VideosResponse> {
-    return this.http.get<VideosResponse>(`${environment.HeadUrl}/tv/${id}/videos?${environment.apiKey}`);
+    return this.http.get<VideosResponse>(`${environment.HeadUrl}tv/${id}/videos?${environment.apiKey}`);
   }
   getTopRated(): Observable<SeriesListResponse> {
     return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/top_rated?${environment.apiKey}`);
