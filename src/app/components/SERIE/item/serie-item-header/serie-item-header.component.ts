@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SerieDetailResponse } from 'src/app/modules/serie-detail-response.module';
-import { Video } from 'src/app/modules/videos-response.module';
 import { SerieListService } from 'src/app/service/serie-list.service';
 import { environment } from 'src/environments/environment.development';
 
@@ -20,16 +19,15 @@ export class SerieItemHeaderComponent implements OnInit {
     if (this.id != null)
       this.serieListService.getSerieVideos(this.id).subscribe(resp => {
         this.trailer = resp.results[0].key;
-        console.log(this.trailer)
       })
   }
 
 
   getImg() {
-    return (`${environment.Photoheader}/${this.serie.poster_path}`);
+    return (`${environment.Photoheader}${this.serie.poster_path}`);
   }
   getImgBackground() {
-    return (`${environment.Photoheader}/${this.serie.backdrop_path}`);
+    return (`${environment.Photoheader}${this.serie.backdrop_path}`);
   }
   getVoteAverageFormated() {
     return this.serie.vote_average.toFixed(1);
