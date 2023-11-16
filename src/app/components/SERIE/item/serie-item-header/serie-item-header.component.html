@@ -1,1 +1,25 @@
-<p>serie-item-header works!</p>
+<div [style.backgroundImage]="'url(' + getImgBackground() + ')'" class="headerbg">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2 d-flex justify-content-center">
+            <div class="card">
+                <mat-card [style.backgroundImage]="'url(' + getImg() + ')'">
+                    <circle-progress [percent]="getVoteAverageFormatedPercent()"
+                        [title]="getVoteAverageFormated().toString()" [radius]="15" [outerStrokeWidth]="3"
+                        [innerStrokeWidth]="15" [outerStrokeColor]="'#009946'" [innerStrokeColor]="'#001F0E'"
+                        [animation]="true" [animationDuration]="300" [titleFontSize]="'10'" [showUnits]=false
+                        [showSubtitle]=false [toFixed]="2" [backgroundColor]="'#001F0E'" [titleColor]="'#FFFFFF'"
+                        [backgroundPadding]="2"></circle-progress>
+                </mat-card>
+            </div>
+        </div>
+        <div class="col">
+            <h1 class="mb-1">{{serie.name}}</h1>
+            <div class="d-flex justify-content-start my-3">
+                <div class="gender" *ngFor="let gender of serie.genres">{{gender.name}}</div>
+            </div>
+            <p class="mt-3">{{serie.overview}}</p>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

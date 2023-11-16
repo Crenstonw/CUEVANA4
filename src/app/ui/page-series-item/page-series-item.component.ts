@@ -16,6 +16,10 @@ export class PageSeriesItemComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
+    if (this.id != null)
+      this.serieListService.getSerieDetail(this.id).subscribe(resp => {
+        this.serie = resp;
+      })
   }
 
 

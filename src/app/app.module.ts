@@ -36,6 +36,8 @@ import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/
 import { ImageComponent } from './components/MOVIE/item/image/image.component';
 import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-header/serie-item-header.component';
 import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
