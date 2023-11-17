@@ -36,6 +36,8 @@ import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/
 import { ImageComponent } from './components/MOVIE/item/image/image.component';
 import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-header/serie-item-header.component';
 import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
+import { SerieItemCapituloComponent } from './components/SERIE/item/serie-item-capitulo/serie-item-capitulo.component';
+import { SerieListsCapituloComponent } from './components/SERIE/lists/serie-lists-capitulo/serie-lists-capitulo.component';
 
 
 @NgModule({
@@ -73,7 +75,9 @@ import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.
     MovieItemInfoComponent,
     ImageComponent,
     SerieItemHeaderComponent,
-    PageSeriesItemComponent
+    PageSeriesItemComponent,
+    SerieItemCapituloComponent,
+    SerieListsCapituloComponent
   ],
   imports: [
     BrowserModule,
