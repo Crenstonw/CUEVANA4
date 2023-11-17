@@ -11,13 +11,13 @@ import { environment } from 'src/environments/environment.development';
 export class SeriesListaItemComponent {
   @Input() serie!: Serie;
 
-  constructor( private router: Router) { };
+  constructor(private router: Router) { };
 
   getImg() {
     return `${environment.Photoheader}/${this.serie.poster_path}`
   }
 
   redirectToDetails(serie: Serie) {
-    this.router.navigate(['actor/', serie.id]);
+    this.router.navigate(['serie/', serie.id]);
   }
 }
