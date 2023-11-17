@@ -38,6 +38,8 @@ import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-hea
 import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
 import { ActorItemDetailsComponent } from './components/ACTOR/item/actor-item-details/actor-item-details.component';
 import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
+import { SerieItemCapituloComponent } from './components/SERIE/item/serie-item-capitulo/serie-item-capitulo.component';
+import { SerieListsCapituloComponent } from './components/SERIE/lists/serie-lists-capitulo/serie-lists-capitulo.component';
 
 
 @NgModule({
@@ -77,7 +79,9 @@ import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.com
     SerieItemHeaderComponent,
     PageSeriesItemComponent,
     ActorItemDetailsComponent,
-    PageActorItemComponent
+    PageActorItemComponent,
+    SerieItemCapituloComponent,
+    SerieListsCapituloComponent
   ],
   imports: [
     BrowserModule,
