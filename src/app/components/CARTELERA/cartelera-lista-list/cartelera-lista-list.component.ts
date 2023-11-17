@@ -3,7 +3,7 @@ import { PageEvent } from '@angular/material/paginator';
 import { Router } from '@angular/router';
 import { Movie } from 'src/app/modules/movie-list.module';
 import { Serie } from 'src/app/modules/serie-list.module';
-import { CarteleraService } from 'src/app/service/cartelera.interface';
+import { CarteleraService } from 'src/app/service/cartelera.service';
 import { MovieListService } from 'src/app/service/movie-list.service';
 import { SerieListService } from 'src/app/service/serie-list.service';
 

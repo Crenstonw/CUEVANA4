@@ -8,6 +8,7 @@ import { PageActoresListComponent } from './ui/page-actores-list/page-actores-li
 import { PageMovieListComponent } from './ui/page-movie-list/page-movie-list.component';
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
+import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
 
 const routes: Routes = [
   { path: 'home', component: PageHomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'series', component: PageSeriesListComponent },
   { path: 'movie/:id', component: PageMovieItemComponent },
   { path: 'serie/:id', component: PageSeriesItemComponent },
+  { path: 'actor/:id', component: PageActorItemComponent },
   { path: '', pathMatch: 'full', component: PageHomeComponent }
 ];
 
