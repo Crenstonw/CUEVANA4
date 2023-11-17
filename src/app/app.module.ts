@@ -20,8 +20,8 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
 import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
 import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-trailer/movie-item-trailer.component';
-import { ActoresListaItemComponent } from './components/ACTORES/actores-lista-item/actores-lista-item.component';
-import { ActoresListaListComponent } from './components/ACTORES/actores-lista-list/actores-lista-list.component';
+import { ActoresListaItemComponent } from './components/LISTSACTORES/actores-lista-item/actores-lista-item.component';
+import { ActoresListaListComponent } from './components/LISTSACTORES/actores-lista-list/actores-lista-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageActoresListComponent } from './ui/page-actores-list/page-actores-list.component';
 import { MovieListaListComponent } from './components/LISTSMOVIES/movie-lista-list/movie-lista-list.component';
@@ -36,6 +36,8 @@ import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/
 import { ImageComponent } from './components/MOVIE/item/image/image.component';
 import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-header/serie-item-header.component';
 import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
+import { ActorItemDetailsComponent } from './components/ACTOR/item/actor-item-details/actor-item-details.component';
+import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
 
 
 @NgModule({
@@ -73,7 +75,9 @@ import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.
     MovieItemInfoComponent,
     ImageComponent,
     SerieItemHeaderComponent,
-    PageSeriesItemComponent
+    PageSeriesItemComponent,
+    ActorItemDetailsComponent,
+    PageActorItemComponent
   ],
   imports: [
     BrowserModule,
