@@ -1,86 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbTypeaheadConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, debounceTime, distinctUntilChanged, map } from 'rxjs';
-
-const states = [
-  'Alabama',
-  'Alaska',
-  'American Samoa',
-  'Arizona',
-  'Arkansas',
-  'California',
-  'Colorado',
-  'Connecticut',
-  'Delaware',
-  'District Of Columbia',
-  'Federated States Of Micronesia',
-  'Florida',
-  'Georgia',
-  'Guam',
-  'Hawaii',
-  'Idaho',
-  'Illinois',
-  'Indiana',
-  'Iowa',
-  'Kansas',
-  'Kentucky',
-  'Louisiana',
-  'Maine',
-  'Marshall Islands',
-  'Maryland',
-  'Massachusetts',
-  'Michigan',
-  'Minnesota',
-  'Mississippi',
-  'Missouri',
-  'Montana',
-  'Nebraska',
-  'Nevada',
-  'New Hampshire',
-  'New Jersey',
-  'New Mexico',
-  'New York',
-  'North Carolina',
-  'North Dakota',
-  'Northern Mariana Islands',
-  'Ohio',
-  'Oklahoma',
-  'Oregon',
-  'Palau',
-  'Pennsylvania',
-  'Puerto Rico',
-  'Rhode Island',
-  'South Carolina',
-  'South Dakota',
-  'Tennessee',
-  'Texas',
-  'Utah',
-  'Vermont',
-  'Virgin Islands',
-  'Virginia',
-  'Washington',
-  'West Virginia',
-  'Wisconsin',
-  'Wyoming',
-];
+import { Serie } from 'src/app/modules/serie-list.module';
+import { SerieListService } from 'src/app/service/serie-list.service';
 
 @Component({
   selector: 'app-series-lista-buscar',
   templateUrl: './series-lista-buscar.component.html',
   styleUrls: ['./series-lista-buscar.component.css']
 })
-export class SeriesListaBuscarComponent {
-  constructor(config: NgbTypeaheadConfig) {
-    // customize default values of typeaheads used by this component tree
+export class SeriesListaBuscarComponent implements OnInit {
+  series: Serie[] = [];
+
+  constructor(config: NgbTypeaheadConfig, private serieService: SerieListService) {
     config.showHint = true;
   }
 
-  search = (text$: Observable<string>) =>
+  refreshSeries() {
+    this.serieService.getPopularNoPageable().subscribe(s => {
+      this.series = s.results;
+    })
+  }
+
+  search = (text$: Observable<string>) => {
     text$.pipe(
       debounceTime(200),
       distinctUntilChanged(),
-      map((term) =>
-        term.length < 2 ? [] : states.filter((v) => v.toLowerCase().startsWith(term.toLocaleLowerCase())).splice(0, 10),
-      ),
+      map((term) => {
+        term.length < 2 ? [] : this.series.filter((v) => v.name.toLowerCase().startsWith(term.toLocaleLowerCase())).splice(0, 10)
+      })
     );
+  };
+
+  ngOnInit(): void {
+    this.search;
+    this.refreshSeries();
+  }
+
 }

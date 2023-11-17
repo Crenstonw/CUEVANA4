@@ -15,14 +15,17 @@ export class SerieListService {
   getSerieVideos(id: string): Observable<VideosResponse> {
     return this.http.get<VideosResponse>(`${environment.HeadUrl}/tv/${id}/videos?${environment.apiKey}`);
   }
-  getTopRated():Observable<SeriesListResponse>{
+  getTopRated(): Observable<SeriesListResponse> {
     return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/top_rated?${environment.apiKey}`);
   }
-  getPopular(page:number): Observable<SeriesListResponse> {
+  getPopularNoPageable(): Observable<SeriesListResponse> {
+    return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/popular?${environment.apiKey}`);
+  }
+  getPopular(page: number): Observable<SeriesListResponse> {
     return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/popular?${environment.apiKey}&page=${page}`);
   }
-  getOnAir(page:number): Observable<SeriesListResponse> {
+  getOnAir(page: number): Observable<SeriesListResponse> {
     return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/on_the_air?${environment.apiKey}&page=${page}`)
-}
+  }
 
 }

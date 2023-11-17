@@ -1,14 +1,13 @@
 <div class="card">
     <mat-card class="mb-2" [style.backgroundImage]="'url(' + getImg() + ')'">
-        <mat-expansion-panel hideToggle>
+        <mat-expansion-panel hideToggle *ngIf="userAccess()">
             <mat-expansion-panel-header>
                 <mat-panel-title>
                     <mat-icon>more_horiz</mat-icon>
                 </mat-panel-title>
             </mat-expansion-panel-header>
-            <mat-icon>favorite</mat-icon>
-            <mat-icon>bookmark</mat-icon>
-            <mat-icon>add</mat-icon>
+            <mat-icon #favorite (click)="addFavorite()">favorite</mat-icon>
+            <mat-icon #watchlist>bookmark</mat-icon>
         </mat-expansion-panel>
 
     </mat-card>

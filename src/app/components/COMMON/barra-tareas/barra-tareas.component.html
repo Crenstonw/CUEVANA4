@@ -32,20 +32,24 @@
         </ul>
     </div>
     <div class="col-sm-2">
-        <!--<div class="row">
-            <div class="col-9 d-flex align-items-center text-right">
-                <h5 class="text-white">Hashbullah</h5>
+        <div class="d-flex flex-row justify-content-end align-items-center text-white" *ngIf="approved">
+            <div class="col-2  align-center">
+                <a (click)="cerrarSesion()" class="color-success">logoff</a>
             </div>
-            <div class="col-3">
-                <img src="./assets/img/user.jpg" style=" width: 75px; border-radius: 100%;">
-            </div>
-        </div>-->
-        <div class="d-flex flex-row justify-content-end align-items-center text-white">
-            <div class="col-4  align-center">
-                <a class="color-success">sign in</a>
+            <div class="col-4 d-flex align-items-center text-right">
+                <h5 class="text-white">{{userName}}</h5>
             </div>
             <div class="col-4 align-center">
-                <a class="btn btn-primary mb-3" style="margin-bottom: 0px !important;">log in</a>
+                <img [src]="userAvatar" style=" width: 75px; border-radius: 100%;">
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end align-items-center text-white" *ngIf="!approved">
+            <div class="col-4  align-center">
+                <a href="https://www.themoviedb.org/signup?language=es" class="color-success">sign in</a>
+            </div>
+            <div class="col-4 align-center">
+                <a (click)="authenticateToken()" class="btn btn-primary mb-3" style="margin-bottom: 0px !important;">log
+                    in</a>
             </div>
         </div>
     </div>

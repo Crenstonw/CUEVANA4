@@ -32,6 +32,7 @@ import { SeriesListaItemComponent } from './components/SERIES/series-lista-item/
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
 import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
+import { MatIconModule } from "@angular/material/icon";
 import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-buscar/series-lista-buscar.component';
 
 @NgModule({
@@ -64,8 +65,9 @@ import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-bus
     MovieListSagaComponent,
     MovieItemSagaComponent,
     SeriesListaBuscarComponent
-
   ],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     NgbModule,
@@ -73,9 +75,8 @@ import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-bus
     HttpClientModule,
     NgCircleProgressModule.forRoot(),
     BrowserAnimationsModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    AppRoutingModule,
+    MatIconModule
+  ]
 })
 export class AppModule { }

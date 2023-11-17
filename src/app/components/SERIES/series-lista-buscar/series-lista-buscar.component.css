@@ -1,7 +1,12 @@
+form {
+    width: 25%;
+    float: right;
+    margin-right: 0;
+}
+
 form * {
-    background-color: transparent;
-    width: 220px;
     color: white;
+    background-color: transparent;
 }
 
 form input {
@@ -10,4 +15,10 @@ form input {
     border-bottom: 2px solid white;
     width: 200px;
     color: white;
+}
+
+mat-icon {
+    width: 40px;
+    margin-top: 10px;
+    cursor: pointer;
 }

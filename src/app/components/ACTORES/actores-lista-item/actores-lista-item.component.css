@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.card-title {
+.card-title, mat-icon {
     cursor: pointer;
 }
 
@@ -39,5 +39,10 @@ mat-card {
 
 circle-progress {
     position: absolute;
-    bottom: 0px;
+    top: 0;
+    right: 0;
+}
+
+.rojo {
+    color: red;
 }

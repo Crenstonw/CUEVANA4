@@ -12,14 +12,21 @@ export class MovieListaItemComponent {
 
   @Input() movie!: Movie;
 
-  constructor( private router: Router) { };
+  constructor(private router: Router) { };
 
   getImg() {
     return `${environment.Photoheader}/${this.movie.poster_path}`
   }
 
+  getVoteAverageFormated() {
+    return this.movie.vote_average.toFixed(1);
+  }
+  getVoteAverageFormatedPercent() {
+    return this.movie.vote_average * 10;
+  }
+
   redirectToDetails(movie: Movie) {
     this.router.navigate(['movie/', movie.id]);
   }
-  
+
 }

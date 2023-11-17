@@ -11,10 +11,17 @@ import { environment } from 'src/environments/environment.development';
 export class SeriesListaItemComponent {
   @Input() serie!: Serie;
 
-  constructor( private router: Router) { };
+  constructor(private router: Router) { };
 
   getImg() {
     return `${environment.Photoheader}/${this.serie.poster_path}`
+  }
+
+  getVoteAverageFormated() {
+    return this.serie.vote_average.toFixed(1);
+  }
+  getVoteAverageFormatedPercent() {
+    return this.serie.vote_average * 10;
   }
 
   redirectToDetails(serie: Serie) {

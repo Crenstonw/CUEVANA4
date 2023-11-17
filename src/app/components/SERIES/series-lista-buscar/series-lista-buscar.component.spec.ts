@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SeriesListaBuscarComponent } from './series-lista-buscar.component';
+import { SeriesListaBuscarComponent } from './SeriesListaBuscarComponent';
 
 describe('SeriesListaBuscarComponent', () => {
   let component: SeriesListaBuscarComponent;
