@@ -4,3 +4,8 @@ export interface Favorite {
     status_code:    number;
     status_message: string;
 }
+
+export interface Watchlist {
+    status_code:    number;
+    status_message: string;
+}

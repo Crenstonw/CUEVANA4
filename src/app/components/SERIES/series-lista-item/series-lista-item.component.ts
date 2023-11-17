@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Serie } from 'src/app/modules/serie-list.module';
+import { AuthenticationService } from 'src/app/service/authentication.interface';
 import { environment } from 'src/environments/environment.development';
 
 @Component({
@@ -11,7 +12,7 @@ import { environment } from 'src/environments/environment.development';
 export class SeriesListaItemComponent {
   @Input() serie!: Serie;
 
-  constructor(private router: Router) { };
+  constructor(private router: Router, private authService: AuthenticationService) { };
 
   getImg() {
     return `${environment.Photoheader}/${this.serie.poster_path}`
@@ -26,5 +27,32 @@ export class SeriesListaItemComponent {
 
   redirectToDetails(serie: Serie) {
     this.router.navigate(['actor/', serie.id]);
+  }
+
+  userAccess() {
+    if(localStorage.getItem('SESSION_ID')!=undefined)
+      return true;
+    else
+      return false;
+  }
+
+  addFavorite() {
+    this.authService.addFavorite(this.serie, 'tv').subscribe(s => {
+      if(s.status_code == 1) {
+        alert('Serie agregada con éxito a favoritos')
+      } else if(s.status_code == 12) {
+        alert('Esta serie ya estaba añadida a favoritos')
+      }
+    })
+  }
+
+  addWatchlist() {
+    this.authService.addWatchlist(this.serie, 'tv').subscribe(m => {
+      if(m.status_code == 1) {
+        alert('Serie agregada con éxito a watchlist')
+      } else if(m.status_code == 12) {
+        alert('Esta serie ya estaba añadida  a watchlist')
+      }
+    })
   }
 }

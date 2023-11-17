@@ -7,6 +7,8 @@ import { Session } from '../modules/authentication-token-module';
 import { User } from '../modules/accountDetails.module';
 import { Actor } from '../modules/actores-list.module';
 import { Favorite } from '../modules/accountLists.module';
+import { Movie } from '../modules/movie-list.module';
+import { Serie } from '../modules/serie-list.module';
 
 @Injectable({
     providedIn: 'root'
@@ -38,10 +40,57 @@ export class AuthenticationService {
         );
     }
 
-    addFavorite(actor: Actor): Observable<Favorite> {
-        return this.http.post<Favorite>(`${environment.HeadUrl}/account/${localStorage.getItem('USER_ID')}/favorite`,
+    addFavorite(item: Serie | Movie, media_type: string): Observable<Favorite> {
+        return this.http.post<Favorite>(`${environment.HeadUrl}account/${localStorage.getItem('USER_ID')}/favorite`,
         {
-            param: actor
+            "media_type": `${media_type}`,
+            "media_id": item.id,
+            "favorite": true
+        },
+        {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${environment.TokenAccess}`
+              } 
+        });
+    }
+
+    addWatchlist(item: Serie | Movie, media_type: string): Observable<Favorite> {
+        return this.http.post<Favorite>(`${environment.HeadUrl}account/${localStorage.getItem('USER_ID')}/watchlist`,
+        {
+            "media_type": `${media_type}`,
+            "media_id": item.id,
+            "watchlist": true
+        },
+        {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${environment.TokenAccess}`
+              } 
+        });
+    }
+
+    removeFavorite(item: Serie | Movie, media_type: string): Observable<Favorite> {
+        return this.http.post<Favorite>(`${environment.HeadUrl}account/${localStorage.getItem('USER_ID')}/favorite`,
+        {
+            "media_type": `${media_type}`,
+            "media_id": item.id,
+            "favorite": false
+        },
+        {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${environment.TokenAccess}`
+              } 
+        });
+    }
+
+    removeWatchlist(item: Serie | Movie, media_type: string): Observable<Favorite> {
+        return this.http.post<Favorite>(`${environment.HeadUrl}account/${localStorage.getItem('USER_ID')}/watchlist`,
+        {
+            "media_type": `${media_type}`,
+            "media_id": item.id,
+            "watchlist": false
         },
         {
             headers: {

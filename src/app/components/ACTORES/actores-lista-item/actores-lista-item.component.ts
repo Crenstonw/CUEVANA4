@@ -10,8 +10,6 @@ import { environment } from 'src/environments/environment.development';
   styleUrls: ['./actores-lista-item.component.css']
 })
 export class ActoresListaItemComponent {
-
-  @ViewChild('favorite') favorite!: ElementRef;
   @Input() actor!: Actor;
 
   constructor(private router: Router, private authService: AuthenticationService) { };
@@ -24,18 +22,4 @@ export class ActoresListaItemComponent {
     this.router.navigate(['actor/', actor.id]);
   }
 
-  userAccess() {
-    if(localStorage.getItem('SESSION_ID')!=undefined)
-      return true;
-    else
-      return false;
-  }
-
-  addFavorite() {
-    this.authService.addFavorite(this.actor).subscribe(a => {
-      if(a.status_code == 1) {
-        this.favorite.nativeElement.classList.add('rojo');
-      }
-    })
-  }
 }

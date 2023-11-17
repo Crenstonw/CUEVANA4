@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.card-title {
+.card-title, mat-icon {
     cursor: pointer;
 }
 
