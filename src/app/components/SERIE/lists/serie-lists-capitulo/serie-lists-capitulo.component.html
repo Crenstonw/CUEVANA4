@@ -1,0 +1,30 @@
+<div class="row p-5">
+    <div class="col-10">
+        <div class="row">
+            <h4>Ultimo capituo</h4>
+            <div class="col-3">
+                <div>
+                    <img [src]="getImgBackground(serie?.last_episode_to_air?.still_path)" alt="" height="150px"
+                        width="300px">
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="m-0">Temporada {{serie?.number_of_seasons}}</h2>
+                <h3>{{serie?.last_episode_to_air?.name}}</h3>
+                <p>{{serie?.last_episode_to_air?.overview}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Temporadas</h4>
+            <div *ngFor="let temp of temporadas">
+                <h2>{{temp.name}} </h2>
+                <div class="list-group list-group-horizontal position-relative overflow-auto w-100">
+                    <div class="list-group-item p-0 m-0" *ngFor="let ep of temp.episodes">
+                        <img [src]="getImgBackground(ep.still_path)" height="150px" width="300px">
+                        <p class="text-center text-white p-1">{{ep.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

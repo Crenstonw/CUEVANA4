@@ -7,14 +7,18 @@ import { PageMovieItemComponent } from './ui/page-movie-item/page-movie-item.com
 import { PageActoresListComponent } from './ui/page-actores-list/page-actores-list.component';
 import { PageMovieListComponent } from './ui/page-movie-list/page-movie-list.component';
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
+import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
+import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
 
 const routes: Routes = [
   { path: 'home', component: PageHomeComponent },
   { path: 'cartelera', component: PageCarteleraComponent },
-  { path: 'actores', component: PageActoresListComponent},
-  { path: 'movies', component: PageMovieListComponent},
-  { path: 'series', component: PageSeriesListComponent},
+  { path: 'actores', component: PageActoresListComponent },
+  { path: 'movies', component: PageMovieListComponent },
+  { path: 'series', component: PageSeriesListComponent },
   { path: 'movie/:id', component: PageMovieItemComponent },
+  { path: 'serie/:id', component: PageSeriesItemComponent },
+  { path: 'actor/:id', component: PageActorItemComponent },
   { path: '', pathMatch: 'full', component: PageHomeComponent }
 ];
 

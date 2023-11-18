@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
 import { Actor } from 'src/app/modules/actores-list.module';
-import { ActoresService } from 'src/app/service/actores.interface';
+import { ActoresService } from 'src/app/service/actores.service';
 
 @Component({
   selector: 'app-actores-lista-list',

@@ -1,0 +1,11 @@
+img{
+    border-radius: 5pt;
+}
+.list-group,.list-group-item{
+    background-color: transparent;
+    border: none;
+
+}
+*{
+    font-size: large;
+}

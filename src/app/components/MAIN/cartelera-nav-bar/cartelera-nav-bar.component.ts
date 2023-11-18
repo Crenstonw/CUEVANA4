@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
-import { CarteleraService } from 'src/app/service/cartelera.interface';
+import { CarteleraService } from 'src/app/service/cartelera.service';
 
 @Component({
   selector: 'app-cartelera-nav-bar',

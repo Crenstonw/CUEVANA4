@@ -7,6 +7,8 @@ import { NowPlaying } from '../modules/movies-NowPlaying.interface';
 import { VideosResponse } from '../modules/videos-response.module';
 import { MovieDetailsResponse } from '../modules/movie-detatils.module';
 import { RepartoResponse } from '../modules/reparto-response.module';
+import { KeywordsResponse } from '../modules/keywordsresponse.module';
+import { ImagesResponse } from '../modules/images.module';
 
 
 @Injectable({
@@ -43,4 +45,13 @@ export class MovieListService {
   getCarteleraOfMovie(id: string): Observable<RepartoResponse> {
     return this.http.get<RepartoResponse>(`${environment.HeadUrl}/movie/${id}/credits?${environment.apiKey}`);
   }
+
+  getMovieKey(id: string): Observable<KeywordsResponse> {
+    return this.http.get<KeywordsResponse>(`${environment.HeadUrl}/movie/${id}/keywords?${environment.apiKey}`);
+  }
+
+  getImageKey(id: string): Observable<ImagesResponse> {
+    return this.http.get<ImagesResponse>(`${environment.HeadUrl}/movie/${id}/images?${environment.apiKey}`);
+  }
+
 }

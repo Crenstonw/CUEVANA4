@@ -20,21 +20,21 @@ import { MovieItemHeaderComponent } from './components/MOVIE/item/movie-item-hea
 import { MovvieListRespartoComponent } from './components/MOVIE/list/movvie-list-resparto/movvie-list-resparto.component';
 import { MovieItemRepartoComponent } from './components/MOVIE/item/movie-item-reparto/movie-item-reparto.component';
 import { MovieItemTrailerComponent } from './components/MOVIE/item/movie-item-trailer/movie-item-trailer.component';
-import { ActoresListaItemComponent } from './components/ACTORES/actores-lista-item/actores-lista-item.component';
-import { ActoresListaListComponent } from './components/ACTORES/actores-lista-list/actores-lista-list.component';
+import { ActoresListaItemComponent } from './components/LISTSACTORES/actores-lista-item/actores-lista-item.component';
+import { ActoresListaListComponent } from './components/LISTSACTORES/actores-lista-list/actores-lista-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageActoresListComponent } from './ui/page-actores-list/page-actores-list.component';
-import { MovieListaListComponent } from './components/MOVIE/movieList/movie-lista-list/movie-lista-list.component';
-import { MovieListaItemComponent } from './components/MOVIE/movieList/movie-lista-item/movie-lista-item.component';
+import { MovieListaListComponent } from './components/LISTSMOVIES/movie-lista-list/movie-lista-list.component';
+import { MovieListaItemComponent } from './components/LISTSMOVIES/movie-lista-item/movie-lista-item.component';
 import { PageMovieListComponent } from './ui/page-movie-list/page-movie-list.component';
-import { SeriesListaListComponent } from './components/SERIES/series-lista-list/series-lista-list.component';
-import { SeriesListaItemComponent } from './components/SERIES/series-lista-item/series-lista-item.component';
+import { SeriesListaListComponent } from './components/LISTSERIES/series-lista-list/series-lista-list.component';
+import { SeriesListaItemComponent } from './components/LISTSERIES/series-lista-item/series-lista-item.component';
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
+import { MatIconModule } from '@angular/material/icon';
 import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
-import { MatIconModule } from "@angular/material/icon";
-import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-buscar/series-lista-buscar.component';
-
+import { ActorItemDetailsComponent } from './components/ACTOR/item/actor-item-details/actor-item-details.component';
+import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +44,9 @@ import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-bus
     CarteleraNavBarComponent,
     CarteleraListaListComponent,
     CarteleraListaItemComponent,
+    PageCarteleraComponent,
+    RecomendedComponent,
+    CarteleraNavBarComponent,
     RecomendedComponent,
     CarteleraNavBarComponent,
     MovieItemHeaderComponent,
@@ -64,7 +67,8 @@ import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-bus
     PageSeriesListComponent,
     MovieListSagaComponent,
     MovieItemSagaComponent,
-    SeriesListaBuscarComponent
+    ActorItemDetailsComponent,
+    PageActorItemComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

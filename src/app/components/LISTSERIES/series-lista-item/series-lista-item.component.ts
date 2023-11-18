@@ -12,7 +12,11 @@ import { environment } from 'src/environments/environment.development';
 export class SeriesListaItemComponent {
   @Input() serie!: Serie;
 
+<<<<<<< HEAD:src/app/components/SERIES/series-lista-item/series-lista-item.component.ts
   constructor(private router: Router, private authService: AuthenticationService) { };
+=======
+  constructor(private router: Router) { };
+>>>>>>> main:src/app/components/LISTSERIES/series-lista-item/series-lista-item.component.ts
 
   getImg() {
     return `${environment.Photoheader}/${this.serie.poster_path}`
@@ -26,7 +30,7 @@ export class SeriesListaItemComponent {
   }
 
   redirectToDetails(serie: Serie) {
-    this.router.navigate(['actor/', serie.id]);
+    this.router.navigate(['serie/', serie.id]);
   }
 
   userAccess() {

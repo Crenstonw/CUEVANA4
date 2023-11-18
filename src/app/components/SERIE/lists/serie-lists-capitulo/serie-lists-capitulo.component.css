@@ -1,4 +1,5 @@
-app-movie-card {
+.list-group,
+.list-group-item {
     background-color: transparent;
     border: none;
 }

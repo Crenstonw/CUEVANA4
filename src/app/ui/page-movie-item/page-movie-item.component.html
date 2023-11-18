@@ -3,8 +3,10 @@
     <div class="col-8">
         <app-movvie-list-resparto [id]="id"></app-movvie-list-resparto>
         <app-movie-item-trailer [id]="id"></app-movie-item-trailer>
+        <app-image [id]="id"></app-image>
     </div>
     <div class="col">
         <app-movie-list-saga *ngIf="collectionId!=null" [collectionId]="collectionId"></app-movie-list-saga>
+        <app-movie-item-info [movie]="movie" [keywords]="keyword"></app-movie-item-info>
     </div>
 </div>
