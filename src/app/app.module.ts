@@ -31,17 +31,10 @@ import { SeriesListaListComponent } from './components/LISTSERIES/series-lista-l
 import { SeriesListaItemComponent } from './components/LISTSERIES/series-lista-item/series-lista-item.component';
 import { PageSeriesListComponent } from './ui/page-series-list/page-series-list.component';
 import { MovieListSagaComponent } from './components/MOVIE/list/movie-list-saga/movie-list-saga.component';
+import { MatIconModule } from '@angular/material/icon';
 import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
-import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/movie-item-info.component';
-import { ImageComponent } from './components/MOVIE/item/image/image.component';
-import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-header/serie-item-header.component';
-import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
 import { ActorItemDetailsComponent } from './components/ACTOR/item/actor-item-details/actor-item-details.component';
 import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
-import { SerieItemCapituloComponent } from './components/SERIE/item/serie-item-capitulo/serie-item-capitulo.component';
-import { SerieListsCapituloComponent } from './components/SERIE/lists/serie-lists-capitulo/serie-lists-capitulo.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,15 +67,11 @@ import { SerieListsCapituloComponent } from './components/SERIE/lists/serie-list
     PageSeriesListComponent,
     MovieListSagaComponent,
     MovieItemSagaComponent,
-    MovieItemInfoComponent,
-    ImageComponent,
-    SerieItemHeaderComponent,
-    PageSeriesItemComponent,
     ActorItemDetailsComponent,
-    PageActorItemComponent,
-    SerieItemCapituloComponent,
-    SerieListsCapituloComponent
+    PageActorItemComponent
   ],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     NgbModule,
@@ -90,9 +79,8 @@ import { SerieListsCapituloComponent } from './components/SERIE/lists/serie-list
     HttpClientModule,
     NgCircleProgressModule.forRoot(),
     BrowserAnimationsModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    AppRoutingModule,
+    MatIconModule
+  ]
 })
 export class AppModule { }

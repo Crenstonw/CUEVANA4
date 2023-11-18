@@ -20,6 +20,9 @@ export class SerieListService {
   getTopRated(): Observable<SeriesListResponse> {
     return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/top_rated?${environment.apiKey}`);
   }
+  getPopularNoPageable(): Observable<SeriesListResponse> {
+    return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/popular?${environment.apiKey}`);
+  }
   getPopular(page: number): Observable<SeriesListResponse> {
     return this.http.get<SeriesListResponse>(`${environment.HeadUrl}/tv/popular?${environment.apiKey}&page=${page}`);
   }

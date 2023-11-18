@@ -10,6 +10,7 @@ import { ActorMoviesResponse } from '../modules/actor-movies-response.module';
   providedIn: 'root'
 })
 export class ActoresService {
+  authToken: string | undefined;
 
   constructor(private http: HttpClient) { }
 

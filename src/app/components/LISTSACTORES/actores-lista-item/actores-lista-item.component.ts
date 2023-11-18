@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Actor } from 'src/app/modules/actores-list.module';
+import { AuthenticationService } from 'src/app/service/authentication.interface';
 import { environment } from 'src/environments/environment.development';
 
 @Component({
@@ -9,10 +10,9 @@ import { environment } from 'src/environments/environment.development';
   styleUrls: ['./actores-lista-item.component.css']
 })
 export class ActoresListaItemComponent {
-
   @Input() actor!: Actor;
 
-  constructor( private router: Router) { };
+  constructor(private router: Router, private authService: AuthenticationService) { };
 
   getImg() {
     return `${environment.Photoheader}/${this.actor.profile_path}`
@@ -21,5 +21,5 @@ export class ActoresListaItemComponent {
   redirectToDetails(actor: Actor) {
     this.router.navigate(['actor/', actor.id]);
   }
-  
+
 }

@@ -1,0 +1,24 @@
+form {
+    width: 25%;
+    float: right;
+    margin-right: 0;
+}
+
+form * {
+    color: white;
+    background-color: transparent;
+}
+
+form input {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid white;
+    width: 200px;
+    color: white;
+}
+
+mat-icon {
+    width: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
