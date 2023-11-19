@@ -40,9 +40,7 @@ export class BarraTareasComponent implements OnInit {
         this.userAvatar = './assets/img/user.png'
       } else {
         this.userAvatar = 'https://image.tmdb.org/t/p/w500/' + u.avatar.tmdb.avatar_path;
-      }
-      console.log(u.avatar.tmdb.avatar_path)
-      
+      }    
     })
   }
 
