@@ -35,6 +35,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MovieItemSagaComponent } from './components/MOVIE/item/movie-item-saga/movie-item-saga.component';
 import { ActorItemDetailsComponent } from './components/ACTOR/item/actor-item-details/actor-item-details.component';
 import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.component';
+import { SeriesListaBuscarComponent } from './components/SERIES/series-lista-buscar/series-lista-buscar.component';
+import { SerieListsCapituloComponent } from './components/SERIE/lists/serie-lists-capitulo/serie-lists-capitulo.component';
+import { MovieItemInfoComponent } from './components/MOVIE/item/movie-item-info/movie-item-info.component';
+import { SerieItemHeaderComponent } from './components/SERIE/item/serie-item-header/serie-item-header.component';
+import { ImageComponent } from './components/MOVIE/item/image/image.component';
+import { PageSeriesItemComponent } from './ui/page-series-item/page-series-item.component';
+import { PageUserComponent } from './ui/page-user/page-user.component';
+import { UserListFavoritemovieComponent } from './components/USER/list/user-list-favoritemovie/user-list-favoritemovie.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +77,15 @@ import { PageActorItemComponent } from './ui/page-actor-item/page-actor-item.com
     MovieListSagaComponent,
     MovieItemSagaComponent,
     ActorItemDetailsComponent,
-    PageActorItemComponent
+    PageActorItemComponent,
+    SeriesListaBuscarComponent,
+    SerieListsCapituloComponent,
+    MovieItemInfoComponent,
+    SerieItemHeaderComponent,
+    ImageComponent,
+    PageSeriesItemComponent,
+    PageUserComponent,
+    UserListFavoritemovieComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
